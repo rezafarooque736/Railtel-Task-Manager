@@ -9,6 +9,8 @@ server/__pycache__
 server/env
 server/.env
 
+# vscode
+.vscode
 
 # testing
 client/coverage
