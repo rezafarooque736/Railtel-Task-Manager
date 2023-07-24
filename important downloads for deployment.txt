@@ -1,0 +1,31 @@
+##install nodejs and npm
+# Using Ubuntu
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+
+##sh: 1: react-scripts: Permission denied
+
+Solution 1:
+I think you have react-script globally installed. so try this command
+
+npm install react-scripts --save
+
+Solution 2:
+try this command
+
+sudo chmod +x node_modules/.bin/react-scripts
+
+Solution 3;
+I think your npm not have permission. you can try to run by sudo
+
+sudo npm run build
+and you can fix this problem like this
+
+
+
+if there is error in installing node latest version use this
+
+1. sudo add-apt-repository -y -r ppa:chris-lea/node.js
+
+2. sudo rm -f /etc/apt/sources.list.d/chris-lea-node_js-*.list

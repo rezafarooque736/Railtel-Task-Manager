@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Regular.ttf");
+  src: url("../fonts/SEGOEUI.TTF");
+}
+
+* {
+  font-family: "Segoe UI", Poppins, sans-serif;
+}
+
+@keyframes background {
+  100% {
+    background-size: 4000px 1000px;
+  }
+}
+
+.bg {
+  background-image: url("../assets/bg.svg");
+  background-size: 2000px 1000px;
+  background-position: -500px 0;
+  animation: background 10s infinite alternate linear;
+  color: #e3e3e3;
+  /* color: #d4d2d7; */
+}
+
+.unOrderedListStyle {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.listStyle {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+}
+
+.spanLeftStyle {
+  color: #828282;
+  width: 110px;
+  margin-right: 15px;
+  text-align: right;
+}
+
+.spanRightStyle {
+  color: #eee;
+  text-align: left;
+  font-size: 12px;
+}
+
+.labelFormStyle {
+  color: #333;
+  width: 155px;
+  text-align: right;
+  font-size: .77rem;
+}
+
+.popoverLeftStyle {
+  color: #828282;
+  background-color: red;
+  width: 210px;
+  min-width: 210px;
+  max-width: 210px;
+  text-align: right;
+}

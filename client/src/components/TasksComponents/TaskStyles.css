@@ -1,0 +1,15 @@
+:root {
+  --text-color-low: #667781;
+  --text-color-high: #3b4a54;
+}
+
+.displayFlexColumn {
+  color: var(--text-color-high);
+}
+
+.displayFlexRow {
+  display: flex;
+  flex-direction: row;
+  color: var(--text-color-high);
+  gap: 5px;
+}

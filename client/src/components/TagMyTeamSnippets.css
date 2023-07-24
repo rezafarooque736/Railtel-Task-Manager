@@ -1,0 +1,27 @@
+.multiSelectContainer input {
+  background: transparent;
+  border: none;
+  margin-top: 3px;
+  margin-left: 7px;
+  width: 100%;
+}
+
+.multiSelectContainer input::placeholder {
+  color: #202020;
+}
+
+.groupChildEle {
+  padding-left: 30px;
+  width: 100%;
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.groupChildEle input[type='checkbox'] {
+  background-color: green;
+  width: 12px;
+  height: 12px;
+}

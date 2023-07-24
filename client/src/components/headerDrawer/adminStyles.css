@@ -1,0 +1,160 @@
+:root {
+  --color-background-weak: #fff;
+  --color-background-medium: #f9f9f8;
+  --color-danger-text: #c92f54;
+  --color-border: #edeae9;
+}
+
+.AdminConsole {
+  background-color: var(--color-background-weak);
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  height: 100vh;
+  min-height: 1px;
+  font-size: 14px;
+}
+
+.AdminConsoleSidebar {
+  background-color: var(--color-background-medium);
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  justify-content: flex-start;
+  margin-left: 0;
+  width: 240px;
+  max-width: 240px;
+  min-width: 240px;
+  overflow-y: hidden;
+  padding: 12px 24px;
+  border-right: 1px solid var(--color-border);
+}
+
+.AdminConsoleSidebarHeaderLogo {
+  align-self: flex-start;
+  margin-bottom: 22px;
+}
+
+.AdminConsoleSidebar-row {
+  margin-bottom: 1rem;
+}
+
+.AdminConsoleSidebarRow-name {
+  font-weight: 300;
+  color: #232323;
+}
+
+.AdminConsoleSidebarRow-name:hover {
+  color: #000;
+}
+
+.AdminConsoleSidebarRow-name-selected {
+  color: var(--color-danger-text);
+  font-weight: 400;
+}
+
+.Typography {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.AdminConsoleBody {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding-left: 264px;
+  min-height: 1px;
+}
+
+.AdminConsolePageStructure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.AdminConsolePageStructure-header {
+  background-color: var(--color-background-weak);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px 0 8px;
+  min-width: 460px;
+  height: 4rem;
+  min-height: 4rem;
+}
+
+.AdminConsolePageStructureLeft {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1e1f21;
+}
+
+.AdminConsolePageStructure-scrollableContainer {
+  display: flex;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.Scrollable--vertical {
+  justify-content: center;
+  padding-top: 32px;
+  width: 100%;
+  min-height: 1px;
+  overflow-y: auto;
+}
+
+.AdminConsolePageStructure-bodyContainer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 32px 8px;
+}
+
+.AdminConsolePageStructure-bodyContainer-cover {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 22px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.AdminConsolePageStructure-bodyContainer-cover-text {
+  font-size: 27px;
+  font-weight: 500;
+  color: #3d3f41;
+  align-self: center;
+}
+
+.AdminConsolePageStructure-body {
+  margin: 0 auto;
+  max-width: 960px;
+  min-width: 400px;
+}
+
+.AdminConsoleInsightsPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.AdminConsoleInsightsPage-infoBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
+  gap: 1.5rem;
+}
+
+.textStyleAdminPageInsights {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #6d6e6f;
+}
